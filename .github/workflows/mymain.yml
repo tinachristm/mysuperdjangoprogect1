@@ -12,11 +12,21 @@ jobs:
     steps:
     - name: Print Hello
       run : echo "Hello from testing"
+      
     
   my_deploy:
     runs-on: ubuntu-latest
     steps:
     - name: Print Hello
-      run : echo "Hello from deploy" 
+      run : echo "Hello from deploy"
+      id: tagName
+        with:
+          tagname: ${{steps.tagName.outputs.tag}}
+        run: |
+          echo ${{steps.tagName.outputs.tag}}
+      
+    env:
+      VAR1 : "Variable1"
+      VAR2 : "Variable2"
     
   
