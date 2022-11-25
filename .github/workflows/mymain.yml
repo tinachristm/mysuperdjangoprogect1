@@ -19,6 +19,9 @@ jobs:
     steps:
     - name: Print Hello
       run : echo "Hello from deploy"
+    steps:
+    - name: Print Hello,Hello
+      run : echo "Hello,Hello"
       
       
     env:
