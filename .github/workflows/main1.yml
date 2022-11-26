@@ -3,8 +3,6 @@ name: output
 
 on:
   push:
-      branches:
-        - master
 
 jobs:
   output:
