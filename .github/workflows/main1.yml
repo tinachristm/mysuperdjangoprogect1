@@ -1,0 +1,17 @@
+name: output
+  runs-on:ubunt-latest
+
+on:
+  push:
+      branches:
+        - master
+
+jobs:
+  output:
+    runs-on: ubuntu-latest
+    steps:
+      - id: step1
+        run: echo "test=hello" >> $GITHUB_OUTPUT
+      - name: Print Hello
+        run : echo ${{steps.step1.outputs.test}}
+      
