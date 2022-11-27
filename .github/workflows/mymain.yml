@@ -23,8 +23,5 @@ jobs:
 
       
       
-    env:
-      VAR1 : "Variable1"
-      VAR2 : "Variable2"
-    
+ 
   
