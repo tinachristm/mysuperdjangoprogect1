@@ -1,9 +1,7 @@
 name: MyBasic
 on: [push]
 jobs: Mytesting
-  runs-on: ubuntu latest
-
-
-steps: 
-- name: print hello,hello,hello
-  run : echo "hello world"
+  runs-on: ubuntu-latest
+  steps: 
+  - name: print hello,hello,hello
+    run : echo "hello world"
